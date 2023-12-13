@@ -6,6 +6,11 @@ import TabButton from "./components/TabButton.jsx"
 
 
 function App() {
+
+  function clickHandler (){
+    console.log("hello world")
+  }
+
   return (
     <div>
       <Header />
@@ -21,7 +26,7 @@ function App() {
         </section>  
         <section id="examples">
           <menu>
-            <TabButton>Components</TabButton>
+            <TabButton onSelect={clickHandler}>Components</TabButton>
             <TabButton>JSX</TabButton>
             <TabButton>Props</TabButton>
             <TabButton>State</TabButton>
